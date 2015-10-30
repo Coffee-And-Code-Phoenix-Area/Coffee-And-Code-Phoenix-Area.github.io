@@ -19,6 +19,7 @@
 }
 
 .container {
+  margin-left: 2em;
   box-sizing: border-box;
   width: 100%;
 }

@@ -8,8 +8,13 @@ class Main extends React.Component {
   items() {
     var items = [];
 
+    items.push(<p/>);
+
     items.push(<Title />);
-    items.push(<Title />);
+    // items.push(<Title />);
+
+    items.push(<p/>);
+    items.push(<p/>);
 
     return items;
   }
