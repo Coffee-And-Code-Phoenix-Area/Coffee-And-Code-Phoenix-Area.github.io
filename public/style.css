@@ -1,0 +1,14 @@
+@font-face {
+    font-family: HFNSS;
+    src: url(./public/HFNSS.ttf);
+}
+
+.point {
+    font-family: HFNSS;
+    font-size:        4em;
+    font-smooth: never;
+    webkit-font-smoothing: none;
+    -webkit-font-smoothing: none;
+    margin: 0;
+}
+
