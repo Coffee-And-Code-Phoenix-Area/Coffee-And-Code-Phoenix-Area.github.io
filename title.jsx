@@ -1,5 +1,5 @@
 import React from 'react';
-import pStyle from './pStyle.jsx';
+import {point as pointStyle} from './Styles.jsx';
 
  
 class Title extends React.Component {
@@ -8,7 +8,7 @@ class Title extends React.Component {
     return (
       <p
         className = 'point'
-        style     = {pStyle}>
+        style     = {pointStyle}>
       Coffee <span style = {{color: '#f20723'}}> and </span> Code
       </p> )
   }

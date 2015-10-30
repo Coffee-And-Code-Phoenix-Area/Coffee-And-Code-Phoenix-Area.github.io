@@ -1,12 +1,15 @@
 import React from 'react';
-import Title from './title.jsx'
+import Title from './title.jsx';
+import Numeral from './numeral.jsx';
 
  
 class Main extends React.Component {
 
   items() {
     var items = [];
-    items.push(<Title />)
+
+    items.push(<Title />);
+    items.push(<Title />);
 
     return items;
   }
@@ -17,35 +20,32 @@ class Main extends React.Component {
 
     return (
 
-      <div>
-        <div
-          style = {{display: 'inline'}}>
+      <div
+        className = 'container'>
+
         {items.map(function(item, itemIndex){
 
-          console.log("DOPE",itemIndex);
+          return(
+            <div
+              className = 'row'>
 
-          return( 
-            <div>
-              <p>{itemIndex + ''}</p>
+              <div
+                className = 'columnNumber'>
+                < Numeral numeral = {itemIndex} />
+              </div>
+
+              <div
+                className = 'column'>
+                {item}
+              </div>
+
             </div>
-           )
+            )
+
         })}
-        </div>
 
-        <div
-          style = {{display: 'inline'}}>
-        {items.map(function(item, itemIndex){
-
-          console.log("DOPE",itemIndex);
-
-          return( 
-            <div>
-              {item}
-            </div>
-           )
-        })}
-        </div>
       </div>
+
     )
   }
 }
