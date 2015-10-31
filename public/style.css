@@ -12,10 +12,38 @@
     margin: 0;
 }
 
+.blurer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+/*  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);*/
+
+}
+
+.foregroundImage {
+  margin: 0px;
+  width: 150%;
+  height: 1500px;
+  position:absolute;
+  left:-200px;
+  top:-200px;
+  /*background-image: url(./public/screenFilter1.png);*/
+  opacity: 0.3;
+  z-index: 999;
+  pointer-events: none;
+}
+
 .content {
   width: 100%;
   height: 100%;
-  transition: all 1s;
+
 }
 
 .container {
@@ -32,8 +60,8 @@
 }
 
 .column {
-  /*float: left;*/
-  /*width: 100%;*/
+  float: left;
+  min-width: 24em;
   min-height: 1.75em;
 }
 

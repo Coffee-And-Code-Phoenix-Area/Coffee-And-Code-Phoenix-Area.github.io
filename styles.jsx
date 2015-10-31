@@ -4,6 +4,11 @@ var Styles = {
   },
   numeral: {
     color: '#07164E'
+  },
+  link: {
+    color:          '#f3d31b',
+    marginLeft:     '1em',
+    textDecoration: 'none'
   }
 }
 
