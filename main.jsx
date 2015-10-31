@@ -34,6 +34,11 @@ class Main extends React.Component {
         destination = {'http://www.google.com'}/>,
         <Note content = {':  Tuesdays 3pm to 8pm'} />
       ]);
+    items.push([<p/>]);
+
+    items.push([< Note content = {
+      'Weekly Code Coworking meetups in the wider phx area'} />
+    ]);
 
     items.push([<p/>]);
     items.push([<p/>]);
