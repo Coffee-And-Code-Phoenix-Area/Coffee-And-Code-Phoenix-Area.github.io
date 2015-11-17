@@ -1,17 +1,56 @@
 @font-face {
-    font-family: HFNSS;
-    src: url(./public/HFNSS.ttf);
+  font-family: HFNSS;
+  src: url("HFNSS.ttf");
 }
-
+body {
+  background: #07168e;
+  padding: 0;
+  margin: 0;
+}
 .point {
-    font-family: HFNSS;
-    font-size:        4em;
-    font-smooth: never;
-    webkit-font-smoothing: none;
-    -webkit-font-smoothing: none;
-    margin: 0;
+  font-family: HFNSS;
+  color: #d0d4d7;
+  font-size: 4em;
+  font-smooth: never;
+  webkit-font-smoothing: none;
+  -webkit-font-smoothing: none;
+  margin: 0;
 }
-
+.link {
+  font-family: HFNSS;
+  color: #f3d31b;
+  font-size: 4em;
+  font-smooth: never;
+  webkit-font-smoothing: none;
+  -webkit-font-smoothing: none;
+  margin: 0;
+  text-decoration: none;
+  underline: none;
+}
+.linkSpan {
+  font-family: HFNSS;
+  color: #f3d31b;
+  text-decoration: none;
+}
+.redSpan {
+  color: #f20723;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.container {
+  padding: 0;
+  margins: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.row {
+  content: '';
+  display: table;
+  clear: both;
+}
 .blurer {
   position: fixed;
   left: 0;
@@ -19,56 +58,49 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-/*  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px);*/
-
 }
-
 .foregroundImage {
   margin: 0px;
   width: 150%;
   height: 1500px;
-  position:absolute;
-  left:-200px;
-  top:-200px;
-  /*background-image: url(./public/screenFilter1.png);*/
+  position: absolute;
+  left: -200px;
+  top: -200px;
   opacity: 0.3;
   z-index: 999;
   pointer-events: none;
 }
-
 .content {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
-
 }
-
 .container {
-  margin-left: 2em;
   box-sizing: border-box;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
 .row {
   content: '';
   display: table;
   clear: both;
   width: 100%;
 }
-
 .column {
   float: left;
-  min-width: 24em;
+  min-width: 16em;
   min-height: 1.75em;
 }
-
 .columnNumber {
-
   float: left;
-  width: 4em;
+  width: 8em;
+  padding-right: 6em;
   min-height: 1.75em;
-
+}
+.columnNumber p {
+  padding-left: 1em;
+  color: #404040;
+  background-color: rgba(32,32,32,0.5);
 }

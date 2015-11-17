@@ -1,27 +1,11 @@
 {
-  "name": "coffee-and-code-phoenix-area",
+  "name": "cnc1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Coffee-And-Code-Phoenix-Area/Coffee-And-Code-Phoenix-Area.github.io.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Coffee-And-Code-Phoenix-Area/Coffee-And-Code-Phoenix-Area.github.io/issues"
-  },
-  "homepage": "https://github.com/Coffee-And-Code-Phoenix-Area/Coffee-And-Code-Phoenix-Area.github.io",
-  "dependencies": {
-    "react": "^0.14.1"
-  },
-  "devDependencies": {
-    "babel-core": "^5.8.33",
-    "babel-loader": "^5.3.3",
-    "webpack": "^1.12.2"
-  }
+  "license": "ISC"
 }
