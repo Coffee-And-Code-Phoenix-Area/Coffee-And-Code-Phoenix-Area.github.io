@@ -3,7 +3,7 @@
   src: url("HFNSS.ttf");
 }
 body {
-  background: #07168e;
+  background: #07165e;
   padding: 0;
   margin: 0;
 }
@@ -69,6 +69,33 @@ body {
   opacity: 0.3;
   z-index: 999;
   pointer-events: none;
+}
+.messageField {
+  background-color: transparent;
+  font-family: HFNSS;
+  color: #d0d4d7;
+  font-size: 4em;
+  font-smooth: never;
+  webkit-font-smoothing: none;
+  -webkit-font-smoothing: none;
+  margin: -3px;
+  padding: -4px;
+  border-color: #d0d4d7;
+  border-style: solid;
+  border: 1;
+  width: 12em;
+}
+.messageSubmit {
+  background-color: '#d0d0d0';
+  font-family: HFNSS;
+  color: #07165e;
+  font-size: 4em;
+  font-smooth: never;
+  webkit-font-smoothing: none;
+  -webkit-font-smoothing: none;
+  margin: -2px;
+  padding: -3px;
+  border: 0;
 }
 .content {
   margin: 0;
