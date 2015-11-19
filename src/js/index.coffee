@@ -50,7 +50,6 @@ AppClass = React.createClass
         console.log error
 
   inputHandle: (event) ->
-    console.log 'INPUT IS', event.target.value
     if @state.inputValue.length < 31
       @setState inputValue: event.target.value
 
@@ -60,7 +59,7 @@ AppClass = React.createClass
     post.set 'content', @state.inputValue
     post.save null,
       success: (post) ->
-        console.log 'Ye Success'
+        location.reload()
       error: (error) ->
         console.log error
 
@@ -109,16 +108,17 @@ AppClass = React.createClass
 
         column null,
           input
-            className: 'messageSubmit'
-            type: 'submit'
-            value: 'post'
-            onClick: @handleSubmit
+            className:  'messageSubmit'
+            type:       'submit'
+            value:      'post'
+            onClick:    @handleSubmit
 
       row null, 
         columnNumber null, 
           point null, (padder layout.length + 2, 2)
+
       _.map posts, (post, index) ->
-        lineNumber = index + layout.length
+        lineNumber = index + layout.length + 3
 
         style = {}
         if index % 3 is 1
