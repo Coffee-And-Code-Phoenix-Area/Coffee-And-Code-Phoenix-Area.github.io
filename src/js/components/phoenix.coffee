@@ -2,7 +2,7 @@
 
 module.exports = [
   [
-    -> link href: 'http://www.meetup.com/Coffee-Code-Phoenix/', "'Phoenix'"
+    -> link href: 'http://www.meetup.com/Coffee-Code-Phoenix/', "'Uptown Phoenix'"
     -> point null, ''
   ]
   [
@@ -16,7 +16,7 @@ module.exports = [
   ]
   [
     -> point style: (textIndent: '1em'), 'When'
-    -> point null, ': Every Thurs, 9 am to 5 pm'
+    -> point null, ': Every Thurs, 9 am to 3 pm'
   ]
   [
     -> point style: (textIndent: '1em'), 'Host'

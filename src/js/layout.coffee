@@ -5,6 +5,8 @@ module.exports = [
   require './components/empty-line.coffee'
   require './components/info.coffee'
   require './components/empty-line.coffee'
+  require './components/dt-phoenix.coffee'
+  require './components/empty-line.coffee'
   require './components/mesa.coffee'
   require './components/empty-line.coffee'
   require './components/phoenix.coffee'
