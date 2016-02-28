@@ -11,7 +11,5 @@ module.exports = [
   require './components/empty-line.coffee'
   require './components/phoenix.coffee'
   require './components/empty-line.coffee'
-  require './components/tempe.coffee'
-  require './components/empty-line.coffee'
   require './components/empty-line.coffee'
 ]

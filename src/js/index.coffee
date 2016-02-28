@@ -68,8 +68,8 @@ AppClass = React.createClass
 
     posts = []
     _.forEach @state.posts, (post, index) ->
-      timeStamp = post.attributes.createdAt
-      formatted = padder timeStamp.getFullYear(), 3
+      timeStamp  = post.attributes.createdAt
+      formatted  = padder timeStamp.getFullYear(), 3
       formatted += padder timeStamp.getMonth(), 1
       formatted += padder timeStamp.getDay(), 2
       formatted += padder timeStamp.getHours(), 2
@@ -121,8 +121,7 @@ AppClass = React.createClass
         lineNumber = index + layout.length + 3
 
         style = {}
-        if index % 3 is 1
-          style.textIndent = '1em'
+        style.textIndent = '1em' if index % 3 is 1
 
         row null,
           columnNumber null, 
